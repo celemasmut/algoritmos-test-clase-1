@@ -11,6 +11,16 @@ public class Potencia {
      */
     public static Integer resolver(Integer base, Integer potencia) {
         // TODO: implementar
-        return null;
+
+        Integer resultado = 1;
+
+        int cont=0;
+        while (cont < potencia){
+            resultado = resultado *base;
+            cont++;
+
+        }
+
+        return resultado;
     }
 }
