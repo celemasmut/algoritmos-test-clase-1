@@ -4,6 +4,6 @@ public class NumeroMayor {
 
     public static Integer resolver(Integer num1, Integer num2) {
         //TODO: implementar
-        return null;
+        return (num1>num2)?num1:num2;
     }
 }
