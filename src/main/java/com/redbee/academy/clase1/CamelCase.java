@@ -14,11 +14,19 @@ public class CamelCase {
      * - Al
      * - Cine
      *
-     * @param palabra
+     * @param texto
      * @return
      */
     public static Integer resolver(String texto) {
         //TODO: implementar
-        return null;
+
+        Integer cantidadDePalabras=1;
+        char[] palabras = texto.toCharArray();
+        for(int i =0; i<texto.length();i++){
+            if((palabras[i] >= 65) && (palabras[i]<= 90)){
+                cantidadDePalabras++;
+            }
+        }
+        return cantidadDePalabras;
     }
 }
