@@ -23,7 +23,7 @@ public class CamelCase {
         Integer cantidadDePalabras=1;
         char[] palabras = texto.toCharArray();
         for(int i =0; i<texto.length();i++){
-            if((palabras[i] >= 65) && (palabras[i]<= 90)){
+            if(((palabras[i] >= 65) && (palabras[i]<= 90)) || palabras[i] == 209){
                 cantidadDePalabras++;
             }
         }

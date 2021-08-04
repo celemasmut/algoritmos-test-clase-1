@@ -29,4 +29,11 @@ public class CamelCaseTests {
 
         Assertions.assertEquals(7, resultado);
     }
+    @Test
+    @DisplayName("Test contar palabras del texto elÑandu")
+    void testContarPalabras4() {
+        Integer resultado = CamelCase.resolver("elÑandu");
+
+        Assertions.assertEquals(2, resultado);
+    }
 }
