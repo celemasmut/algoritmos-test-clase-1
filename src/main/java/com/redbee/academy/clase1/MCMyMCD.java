@@ -25,16 +25,16 @@ public class MCMyMCD {
      */
     public static Integer mcd(int num1, int num2) {
         // TODO: implementar
-        int a = Math.max(num1, num2);
-        int b = Math.min(num1, num2);
+        int maximo = Math.max(num1, num2);
+        int minimo = Math.min(num1, num2);
 
         int resultado = 0;
         do {
-            resultado = b;
-            b = a % b;
-            a = resultado;
+            resultado = minimo;
+            minimo = maximo % minimo;
+            maximo = resultado;
 
-        } while (b != 0);
+        } while (minimo != 0);
 
         return resultado;
     }

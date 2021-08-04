@@ -17,6 +17,18 @@ public class TipoTriangulo {
      */
     public static String resolver(int lado1, int lado2, int lado3) {
         // TODO: implementar
-        return null;
+
+        String respuesta;
+
+        if(lado1 == lado2 && lado2 == lado3){
+            respuesta = "Equilátero";
+        }else {
+            if((lado1 == lado2) || (lado1 == lado3) || (lado2 == lado3)){
+                respuesta="Isósceles";
+            }else{
+                respuesta="Escaleno";
+            }
+        }
+        return respuesta;
     }
 }
